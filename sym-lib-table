@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name energy_harvesting_library)(type Legacy)(uri ${KIPRJMOD}/Libraries/energy_harvesting_library.lib)(options "")(descr ""))
+  (lib (name locator-energy-harvesting-module-rescue)(type Legacy)(uri ${KIPRJMOD}/locator-energy-harvesting-module-rescue.lib)(options "")(descr ""))
+)

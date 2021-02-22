@@ -1,0 +1,1015 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Energy Harvesting Module"
+Date "2020-06-13"
+Rev "Rev. 0"
+Comp "Wilhelm Zeuschner, Igor Knippenberg"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR04
+U 1 1 5EE539BD
+P 4600 3350
+F 0 "#PWR04" H 4600 3100 50  0001 C CNN
+F 1 "GND" H 4605 3177 50  0000 C CNN
+F 2 "" H 4600 3350 50  0001 C CNN
+F 3 "" H 4600 3350 50  0001 C CNN
+	1    4600 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3350 4600 3200
+Wire Wire Line
+	4600 2800 4450 2800
+Wire Wire Line
+	4450 2900 4600 2900
+Connection ~ 4600 2900
+Wire Wire Line
+	4600 2900 4600 2800
+Wire Wire Line
+	4450 3000 4600 3000
+Connection ~ 4600 3000
+Wire Wire Line
+	4600 3000 4600 2900
+Wire Wire Line
+	4450 3100 4600 3100
+Connection ~ 4600 3100
+Wire Wire Line
+	4600 3100 4600 3000
+Wire Wire Line
+	4450 3200 4600 3200
+Connection ~ 4600 3200
+Wire Wire Line
+	4600 3200 4600 3100
+Wire Wire Line
+	4600 2700 4600 2800
+Wire Wire Line
+	4450 2700 4600 2700
+Connection ~ 4600 2800
+$Comp
+L Device:L L1
+U 1 1 5EE64C4B
+P 2450 2100
+F 0 "L1" V 2640 2100 50  0000 C CNN
+F 1 "22uH" V 2549 2100 50  0000 C CNN
+F 2 "Locator_Footprints:L_Coilcraft_LPS4018" H 2450 2100 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/597/lps4018-270702.pdf" H 2450 2100 50  0001 C CNN
+F 4 "Fixed Inductors 22uH Shld 20% 830mA 360 mOhms " H 2450 2100 50  0001 C CNN "Description"
+F 5 "https://www.mouser.de/ProductDetail/Coilcraft/LPS4018-223MRB?qs=QQJxVsr8EGYUSn8mrv3X3Q%3D%3D" H 2450 2100 50  0001 C CNN "Link"
+F 6 "LPS4018-223MRB" H 2450 2100 50  0001 C CNN "MPN"
+F 7 "Coilcraft " H 2450 2100 50  0001 C CNN "Manufacturer"
+F 8 "Nonstandard" H 2450 2100 50  0001 C CNN "Package"
+F 9 "994-LPS4018-223MRB " H 2450 2100 50  0001 C CNN "SPN"
+	1    2450 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small CIN1
+U 1 1 5EE6618D
+P 1450 2350
+F 0 "CIN1" H 1542 2396 50  0000 L CNN
+F 1 "4.7uF" H 1542 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1450 2350 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf" H 1450 2350 50  0001 C CNN
+F 4 "4.7µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 1450 2350 50  0001 C CNN "Description"
+F 5 "https://www.digikey.de/product-detail/en/tdk-corporation/C1608X5R1C475K080AC/445-7478-1-ND/2733550" H 1450 2350 50  0001 C CNN "Link"
+F 6 "C1608X5R1C475K080AC" H 1450 2350 50  0001 C CNN "MPN"
+F 7 "TDK Corporation" H 1450 2350 50  0001 C CNN "Manufacturer"
+F 8 "C-0603 (1608 Metric) " H 1450 2350 50  0001 C CNN "Package"
+F 9 "445-7478-1-ND" H 1450 2350 50  0001 C CNN "SPN"
+	1    1450 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C_REF1
+U 1 1 5EE6A9AC
+P 2150 2650
+F 0 "C_REF1" H 2058 2604 50  0000 R CNN
+F 1 "0.01uF" H 2058 2695 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2150 2650 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us" H 2150 2650 50  0001 C CNN
+F 4 "10000pF ±5% 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)" H 2150 2650 50  0001 C CNN "Description"
+F 5 "https://www.digikey.de/product-detail/en/murata-electronics/GRM1885C1H103JA01D/490-9666-1-ND/4934772" H 2150 2650 50  0001 C CNN "Link"
+F 6 "GRM1885C1H103JA01D" H 2150 2650 50  0001 C CNN "MPN"
+F 7 "Murata Electronics" H 2150 2650 50  0001 C CNN "Manufacturer"
+F 8 "C-0603 (1608 Metric) " H 2150 2650 50  0001 C CNN "Package"
+F 9 "490-9666-1-ND" H 2150 2650 50  0001 C CNN "SPN"
+	1    2150 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2600 2100 2750 2100
+Wire Wire Line
+	1450 2250 1450 1800
+Wire Wire Line
+	1000 1800 1450 1800
+Wire Wire Line
+	2150 2100 2150 1800
+Wire Wire Line
+	2150 1800 2750 1800
+Wire Wire Line
+	2150 2100 2300 2100
+$Comp
+L power:GND #PWR01
+U 1 1 5EE7089B
+P 1850 2950
+F 0 "#PWR01" H 1850 2700 50  0001 C CNN
+F 1 "GND" H 1855 2777 50  0000 C CNN
+F 2 "" H 1850 2950 50  0001 C CNN
+F 3 "" H 1850 2950 50  0001 C CNN
+	1    1850 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1450 3550 1350
+Wire Wire Line
+	3550 1350 3650 1350
+Wire Wire Line
+	3650 1350 3650 1450
+$Comp
+L Device:R_Small R_OV2
+U 1 1 5EE7514C
+P 3100 3900
+F 0 "R_OV2" H 3159 3946 50  0000 L CNN
+F 1 "7.68M" H 3159 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3100 3900 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/20035/dcrcwe3.pdf" H 3100 3900 50  0001 C CNN
+F 4 "" H 3100 3900 50  0001 C CNN "Mouser Link"
+F 5 "7.68 MOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film" H 3100 3900 50  0001 C CNN "Description"
+F 6 "https://www.digikey.de/product-detail/en/vishay-dale/CRCW06037M68FKEA/541-7-68MHCT-ND/1180253" H 3100 3900 50  0001 C CNN "Link"
+F 7 "CRCW06037M68FKEA" H 3100 3900 50  0001 C CNN "MPN"
+F 8 "Vishay Dale" H 3100 3900 50  0001 C CNN "Manufacturer"
+F 9 "R-0603 (1608 Metric) " H 3100 3900 50  0001 C CNN "Package"
+F 10 "541-7.68MHCT-ND" H 3100 3900 50  0001 C CNN "SPN"
+	1    3100 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R_OV1
+U 1 1 5EE762BC
+P 3100 4200
+F 0 "R_OV1" H 3159 4246 50  0000 L CNN
+F 1 "6.19M" H 3159 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3100 4200 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/20035/dcrcwe3.pdf" H 3100 4200 50  0001 C CNN
+F 4 "" H 3100 4200 50  0001 C CNN "Mouser Link"
+F 5 "6.19 MOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film" H 3100 4200 50  0001 C CNN "Description"
+F 6 "https://www.digikey.de/product-detail/en/vishay-dale/CRCW06036M19FKEA/541-6-19MHCT-ND/1180242" H 3100 4200 50  0001 C CNN "Link"
+F 7 "CRCW06036M19FKEA" H 3100 4200 50  0001 C CNN "MPN"
+F 8 "Vishay Dale" H 3100 4200 50  0001 C CNN "Manufacturer"
+F 9 "R-0603 (1608 Metric) " H 3100 4200 50  0001 C CNN "Package"
+F 10 "541-6.19MHCT-ND" H 3100 4200 50  0001 C CNN "SPN"
+	1    3100 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R_OK2
+U 1 1 5EE767A9
+P 3750 4200
+F 0 "R_OK2" H 3809 4246 50  0000 L CNN
+F 1 "6.34M" H 3809 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3750 4200 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/20035/dcrcwe3.pdf" H 3750 4200 50  0001 C CNN
+F 4 "" H 3750 4200 50  0001 C CNN "Mouser Link"
+F 5 "6.34 MOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film" H 3750 4200 50  0001 C CNN "Description"
+F 6 "https://www.digikey.com/product-detail/en/vishay-dale/CRCW06036M34FKEA/541-6-34MHCT-ND/1180244" H 3750 4200 50  0001 C CNN "Link"
+F 7 "CRCW06036M34FKEA" H 3750 4200 50  0001 C CNN "MPN"
+F 8 "Vishay Dale" H 3750 4200 50  0001 C CNN "Manufacturer"
+F 9 "R-0603 (1608 Metric) " H 3750 4200 50  0001 C CNN "Package"
+F 10 "541-6.34MHCT-ND" H 3750 4200 50  0001 C CNN "SPN"
+	1    3750 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R_OK1
+U 1 1 5EE76D7F
+P 3750 4500
+F 0 "R_OK1" H 3809 4546 50  0000 L CNN
+F 1 "5.9M" H 3809 4455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3750 4500 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/20035/dcrcwe3.pdf" H 3750 4500 50  0001 C CNN
+F 4 "" H 3750 4500 50  0001 C CNN "Mouser Link"
+F 5 "5.9 MOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film" H 3750 4500 50  0001 C CNN "Description"
+F 6 "https://www.digikey.com/product-detail/en/vishay-dale/CRCW06035M90FKEA/541-5-90MHCT-ND/1180240" H 3750 4500 50  0001 C CNN "Link"
+F 7 "CRCW06035M90FKEA" H 3750 4500 50  0001 C CNN "MPN"
+F 8 "Vishay Dale" H 3750 4500 50  0001 C CNN "Manufacturer"
+F 9 "R-0603 (1608 Metric) " H 3750 4500 50  0001 C CNN "Package"
+F 10 "541-5.90MHCT-ND" H 3750 4500 50  0001 C CNN "SPN"
+	1    3750 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R_OK3
+U 1 1 5EE7721F
+P 3750 3900
+F 0 "R_OK3" H 3809 3946 50  0000 L CNN
+F 1 "1M" H 3809 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3750 3900 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf" H 3750 3900 50  0001 C CNN
+F 4 "" H 3750 3900 50  0001 C CNN "Mouser link"
+F 5 "1 MOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film" H 3750 3900 50  0001 C CNN "Description"
+F 6 "https://www.digikey.com/product-detail/en/yageo/AC0603FR-071ML/311-1MLDCT-ND/2828141" H 3750 3900 50  0001 C CNN "Link"
+F 7 "AC0603FR-071ML" H 3750 3900 50  0001 C CNN "MPN"
+F 8 "Yageo" H 3750 3900 50  0001 C CNN "Manufacturer"
+F 9 "R-0603 (1608 Metric) " H 3750 3900 50  0001 C CNN "Package"
+F 10 "311-1MLDCT-ND" H 3750 3900 50  0001 C CNN "SPN"
+	1    3750 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5EE8059B
+P 3100 4750
+F 0 "#PWR03" H 3100 4500 50  0001 C CNN
+F 1 "GND" H 3105 4577 50  0000 C CNN
+F 2 "" H 3100 4750 50  0001 C CNN
+F 3 "" H 3100 4750 50  0001 C CNN
+	1    3100 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3750 3750 3800
+Wire Wire Line
+	3000 4050 3100 4050
+Wire Wire Line
+	3100 4050 3100 4000
+Wire Wire Line
+	3100 4050 3100 4100
+Connection ~ 3100 4050
+Wire Wire Line
+	3750 4350 3750 4300
+Wire Wire Line
+	3750 4400 3750 4350
+Connection ~ 3750 4350
+Wire Wire Line
+	3100 3750 3100 3800
+Wire Wire Line
+	3100 3750 3350 3750
+Wire Wire Line
+	3350 3550 3350 3750
+Wire Wire Line
+	3000 3650 3250 3650
+Wire Wire Line
+	3250 3650 3250 3550
+Wire Wire Line
+	3000 3650 3000 4050
+Wire Wire Line
+	3750 4700 3750 4600
+Wire Wire Line
+	3750 4000 3750 4050
+Wire Wire Line
+	3100 4300 3100 4700
+Connection ~ 3350 3750
+Wire Wire Line
+	3500 4350 3750 4350
+Wire Wire Line
+	3100 4700 3750 4700
+Connection ~ 3100 4700
+Wire Wire Line
+	3100 4700 3100 4750
+Wire Wire Line
+	3750 4050 3600 4050
+Connection ~ 3750 4050
+Wire Wire Line
+	3750 4050 3750 4100
+$Comp
+L Device:C_Small CSTOR1
+U 1 1 5EEA89D5
+P 2500 1150
+F 0 "CSTOR1" H 2592 1196 50  0000 L CNN
+F 1 "4.7uF" H 2592 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2500 1150 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf" H 2500 1150 50  0001 C CNN
+F 4 "4.7µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 2500 1150 50  0001 C CNN "Description"
+F 5 "https://www.digikey.de/product-detail/en/tdk-corporation/C1608X5R1C475K080AC/445-7478-1-ND/2733550" H 2500 1150 50  0001 C CNN "Link"
+F 6 "C1608X5R1C475K080AC" H 2500 1150 50  0001 C CNN "MPN"
+F 7 "TDK Corporation" H 2500 1150 50  0001 C CNN "Manufacturer"
+F 8 "C-0603 (1608 Metric) " H 2500 1150 50  0001 C CNN "Package"
+F 9 "445-7478-1-ND" H 2500 1150 50  0001 C CNN "SPN"
+	1    2500 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2550 2150 2450
+Wire Wire Line
+	2150 2950 2150 2750
+Wire Wire Line
+	1450 2450 1450 2950
+Connection ~ 1450 1800
+Wire Wire Line
+	2150 2450 2750 2450
+$Comp
+L Device:C_Small CIN2
+U 1 1 5EEBD7C7
+P 1850 2350
+F 0 "CIN2" H 1758 2304 50  0000 R CNN
+F 1 "0.1uF" H 1758 2395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1850 2350 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1090_X7R_ESD.pdf" H 1850 2350 50  0001 C CNN
+F 4 "0.1µF ±5% 16V Ceramic Capacitor X7R 0603 (1608 Metric)" H 1850 2350 50  0001 C CNN "Description"
+F 5 "https://www.digikey.com/product-detail/en/kemet/C0603X104J4RECAUTO/399-17843-6-ND/8640583" H 1850 2350 50  0001 C CNN "Link"
+F 6 "C0603X104J4RECAUTO" H 1850 2350 50  0001 C CNN "MPN"
+F 7 "KEMET" H 1850 2350 50  0001 C CNN "Manufacturer"
+F 8 "C-0603 (1608 Metric) " H 1850 2350 50  0001 C CNN "Package"
+F 9 "399-17843-6-ND" H 1850 2350 50  0001 C CNN "SPN"
+	1    1850 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1850 2250 1850 1800
+Wire Wire Line
+	1450 1800 1850 1800
+Wire Wire Line
+	1850 1800 2150 1800
+Connection ~ 1850 1800
+Connection ~ 2150 1800
+Wire Wire Line
+	1450 2950 1850 2950
+Wire Wire Line
+	1850 2450 1850 2950
+Connection ~ 1850 2950
+Wire Wire Line
+	1850 2950 2150 2950
+Text Notes 2700 5200 0    50   ~ 0
+For more info on the calcualtion\ncheck the spreadsheet provided by TI
+Wire Wire Line
+	2500 1050 2500 950 
+Connection ~ 3550 1350
+$Comp
+L power:GND #PWR02
+U 1 1 5EF06214
+P 2500 1400
+F 0 "#PWR02" H 2500 1150 50  0001 C CNN
+F 1 "GND" H 2505 1227 50  0000 C CNN
+F 2 "" H 2500 1400 50  0001 C CNN
+F 3 "" H 2500 1400 50  0001 C CNN
+	1    2500 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1400 2500 1300
+Connection ~ 2500 1300
+Wire Wire Line
+	2500 1300 2500 1250
+Wire Wire Line
+	3550 950  3550 1350
+Text Label 1000 1800 0    50   ~ 0
+SOLAR_IN
+Text Label 5050 2000 2    50   ~ 0
+VBAT_SEC
+Text Label 5050 1750 2    50   ~ 0
+VBAT_PRI
+Text Label 6900 3650 0    50   ~ 0
+SOLAR_IN
+Text Label 6900 3750 0    50   ~ 0
+GND
+Text Label 6900 4150 0    50   ~ 0
+GND
+Text Label 8900 3750 2    50   ~ 0
+GND
+Text Label 8900 3950 2    50   ~ 0
+GND
+Text Label 6900 4350 0    50   ~ 0
+VBAT_PRI
+Text Notes 6500 3400 0    50   ~ 0
+Module Header
+Text Label 6900 3950 0    50   ~ 0
+VBAT_SEC
+Wire Notes Line
+	9800 3250 9800 4550
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 5EEC180E
+P 9850 1050
+F 0 "F1" V 9645 1050 50  0000 C CNN
+F 1 "2.6A Ih 5A It Polyfuse" V 9736 1050 50  0000 C CNN
+F 2 "Fuse:Fuse_1812_4532Metric_Castellated" H 9900 850 50  0001 L CNN
+F 3 "https://www.belfuse.com/resources/datasheets/circuitprotection/ds-cp-0zcg-series.pdf" H 9850 1050 50  0001 C CNN
+F 4 "Polymeric PTC Resettable Fuse 8V 2.6A Ih Surface Mount 1812 (4532 Metric), Concave" H 9850 1050 50  0001 C CNN "Description"
+F 5 "https://www.digikey.de/product-detail/en/bel-fuse-inc/0ZCG0260FF2C/507-1778-1-ND/4156282" H 9850 1050 50  0001 C CNN "Link"
+F 6 "0ZCG0260FF2C" H 9850 1050 50  0001 C CNN "MPN"
+F 7 "Bel Fuse Inc." H 9850 1050 50  0001 C CNN "Manufacturer"
+F 8 "1812 (4532 Metric), Concave " H 9850 1050 50  0001 C CNN "Package"
+F 9 "507-1778-1-ND" H 9850 1050 50  0001 C CNN "SPN"
+	1    9850 1050
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	6400 3250 9800 3250
+Wire Notes Line
+	6400 3250 6400 4550
+Wire Notes Line
+	6400 4550 9800 4550
+$Comp
+L Device:C_Small C6
+U 1 1 5EEBAFF5
+P 9450 1300
+F 0 "C6" H 9542 1346 50  0000 L CNN
+F 1 "4.7uF" H 9542 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9450 1300 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf" H 9450 1300 50  0001 C CNN
+F 4 "4.7µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 9450 1300 50  0001 C CNN "Description"
+F 5 "https://www.digikey.de/product-detail/en/tdk-corporation/C1608X5R1C475K080AC/445-7478-1-ND/2733550" H 9450 1300 50  0001 C CNN "Link"
+F 6 "C1608X5R1C475K080AC" H 9450 1300 50  0001 C CNN "MPN"
+F 7 "TDK Corporation" H 9450 1300 50  0001 C CNN "Manufacturer"
+F 8 "C-0603 (1608 Metric) " H 9450 1300 50  0001 C CNN "Package"
+F 9 "445-7478-1-ND" H 9450 1300 50  0001 C CNN "SPN"
+	1    9450 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5EEBA788
+P 9000 1300
+F 0 "C5" H 8908 1254 50  0000 R CNN
+F 1 "0.1uF" H 8908 1345 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9000 1300 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1090_X7R_ESD.pdf" H 9000 1300 50  0001 C CNN
+F 4 "0.1µF ±5% 16V Ceramic Capacitor X7R 0603 (1608 Metric)" H 9000 1300 50  0001 C CNN "Description"
+F 5 "https://www.digikey.com/product-detail/en/kemet/C0603X104J4RECAUTO/399-17843-6-ND/8640583" H 9000 1300 50  0001 C CNN "Link"
+F 6 "C0603X104J4RECAUTO" H 9000 1300 50  0001 C CNN "MPN"
+F 7 "KEMET" H 9000 1300 50  0001 C CNN "Manufacturer"
+F 8 "C-0603 (1608 Metric) " H 9000 1300 50  0001 C CNN "Package"
+F 9 "399-17843-6-ND" H 9000 1300 50  0001 C CNN "SPN"
+	1    9000 1300
+	-1   0    0    1   
+$EndComp
+Text Notes 6500 700  0    50   ~ 0
+Output switching double P-MOSFETS
+Wire Notes Line
+	6400 3100 6400 550 
+Connection ~ 8100 1400
+Wire Wire Line
+	8300 1400 8100 1400
+Text Label 8300 1400 0    50   ~ 0
+VBAT_PRI
+Connection ~ 8100 2400
+Wire Wire Line
+	8100 2400 8350 2400
+$Comp
+L power:+VDC #PWR011
+U 1 1 5EF6484C
+P 8500 2800
+F 0 "#PWR011" H 8500 2700 50  0001 C CNN
+F 1 "+VDC" H 8500 3075 50  0000 C CNN
+F 2 "" H 8500 2800 50  0001 C CNN
+F 3 "" H 8500 2800 50  0001 C CNN
+	1    8500 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 2400 8100 2400
+Connection ~ 8100 2700
+Wire Wire Line
+	8300 2700 8100 2700
+Text Label 8350 2400 0    50   ~ 0
+VBAT_SEC
+Connection ~ 8100 1100
+Wire Wire Line
+	8350 1100 8100 1100
+Wire Wire Line
+	7100 2800 7200 2800
+Wire Wire Line
+	7100 2700 7100 2800
+Wire Wire Line
+	7200 2700 7100 2700
+Wire Wire Line
+	7100 1400 7200 1400
+Wire Wire Line
+	7100 1500 7200 1500
+Wire Wire Line
+	7100 1400 7100 1500
+Wire Wire Line
+	8100 2800 8000 2800
+Wire Wire Line
+	8100 2700 8100 2800
+Wire Wire Line
+	8000 2700 8100 2700
+Wire Wire Line
+	8100 2500 8000 2500
+Wire Wire Line
+	8100 2400 8100 2500
+Wire Wire Line
+	8100 1500 8000 1500
+Wire Wire Line
+	8100 1400 8100 1500
+Wire Wire Line
+	8000 1400 8100 1400
+Wire Wire Line
+	8100 1200 8000 1200
+Wire Wire Line
+	8100 1100 8100 1200
+Wire Wire Line
+	8000 1100 8100 1100
+Wire Wire Line
+	7100 2400 7200 2400
+Connection ~ 7100 2400
+Wire Wire Line
+	7100 2500 7200 2500
+Wire Wire Line
+	7100 2400 7100 2500
+Wire Wire Line
+	7100 1100 7200 1100
+Connection ~ 7100 1100
+Wire Wire Line
+	7100 1200 7100 1100
+Wire Wire Line
+	7200 1200 7100 1200
+Wire Notes Line
+	550  550  6300 550 
+Wire Notes Line
+	6300 550  6300 5250
+Wire Notes Line
+	550  5250 550  550 
+Wire Notes Line
+	550  5250 6300 5250
+Text Notes 650  700  0    50   ~ 0
+BQ25505 Energy Harvesting IC
+$Comp
+L power:+VDC #PWR0101
+U 1 1 5EF31E52
+P 9000 950
+F 0 "#PWR0101" H 9000 850 50  0001 C CNN
+F 1 "+VDC" H 9000 1225 50  0000 C CNN
+F 2 "" H 9000 950 50  0001 C CNN
+F 3 "" H 9000 950 50  0001 C CNN
+	1    9000 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5EF32528
+P 9000 1700
+F 0 "#PWR0102" H 9000 1450 50  0001 C CNN
+F 1 "GND" H 9005 1527 50  0000 C CNN
+F 2 "" H 9000 1700 50  0001 C CNN
+F 3 "" H 9000 1700 50  0001 C CNN
+	1    9000 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 950  9000 1050
+Wire Wire Line
+	9000 1050 9450 1050
+Wire Wire Line
+	9450 1050 9450 1200
+Connection ~ 9000 1050
+Wire Wire Line
+	9000 1050 9000 1200
+Wire Wire Line
+	9000 1550 9450 1550
+Wire Wire Line
+	9450 1550 9450 1400
+Connection ~ 9000 1550
+Wire Wire Line
+	9000 1550 9000 1400
+Text Label 10550 1050 2    50   ~ 0
+PWR_OUT
+Wire Wire Line
+	10550 1050 10050 1050
+Wire Wire Line
+	9000 1550 9000 1700
+$Comp
+L power:GND #PWR0103
+U 1 1 5EFC16B3
+P 10050 1700
+F 0 "#PWR0103" H 10050 1450 50  0001 C CNN
+F 1 "GND" H 10055 1527 50  0000 C CNN
+F 2 "" H 10050 1700 50  0001 C CNN
+F 3 "" H 10050 1700 50  0001 C CNN
+	1    10050 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 1050 9450 1050
+Connection ~ 9450 1050
+Wire Notes Line
+	11150 550  11150 3100
+Wire Notes Line
+	6400 550  11150 550 
+Wire Notes Line
+	6400 3100 11150 3100
+Wire Wire Line
+	10050 1200 10050 1050
+Connection ~ 10050 1050
+Wire Wire Line
+	10050 1050 9950 1050
+Text Label 6900 3850 0    50   ~ 0
+GND
+Wire Wire Line
+	3500 3550 3500 4350
+Wire Wire Line
+	3600 3550 3600 4050
+Wire Wire Line
+	3350 3750 3750 3750
+$Comp
+L Locator_Library:Energy_Harvesting_Module_Footprint J1
+U 1 1 5F28F92A
+P 7950 4000
+F 0 "J1" H 7950 4575 50  0000 C CNN
+F 1 "Energy_Harvesting_Module_Footprint" H 7950 4484 50  0000 C CNN
+F 2 "Locator_Footprints:Energy_Harvesting_Module_Footprint" H 7950 4600 50  0001 C CNN
+F 3 "" H 7950 4600 50  0001 C CNN
+F 4 "DNP" H 7950 4000 50  0001 C CNN "Assembly"
+	1    7950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Locator_Library:NTHD4102PT1G Q1
+U 1 1 5F2A66F1
+P 7600 1300
+F 0 "Q1" H 7600 1765 50  0000 C CNN
+F 1 "NTHD4102PT1G" H 7600 1674 50  0000 C CNN
+F 2 "Locator_Footprints:NTHD4102P_ChipFET_CASE_1206A" H 7600 2100 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NTHD4102P-D.PDF" H 7600 2100 50  0001 C CNN
+F 4 "Mosfet Array 2 P-Channel (Dual) 20V 2.9A 1.1W Surface Mount ChipFET™" H 7600 1300 50  0001 C CNN "Description"
+F 5 "https://www.digikey.de/product-detail/en/on-semiconductor/NTHD4102PT1G/NTHD4102PT1GOSCT-ND/2122000" H 7600 1300 50  0001 C CNN "Link"
+F 6 "NTHD4102PT1G" H 7600 1300 50  0001 C CNN "MPN"
+F 7 "ON Semiconductor" H 7600 1300 50  0001 C CNN "Manufacturer"
+F 8 "8-SMD, Flat Lead " H 7600 1300 50  0001 C CNN "Package"
+F 9 "NTHD4102PT1GOSCT-ND" H 7600 1300 50  0001 C CNN "SPN"
+	1    7600 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Locator_Library:NTHD4102PT1G Q2
+U 1 1 5F2A6DA0
+P 7600 2600
+F 0 "Q2" H 7600 3065 50  0000 C CNN
+F 1 "NTHD4102PT1G" H 7600 2974 50  0000 C CNN
+F 2 "Locator_Footprints:NTHD4102P_ChipFET_CASE_1206A" H 7600 3400 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NTHD4102P-D.PDF" H 7600 3400 50  0001 C CNN
+F 4 "Mosfet Array 2 P-Channel (Dual) 20V 2.9A 1.1W Surface Mount ChipFET™" H 7600 2600 50  0001 C CNN "Description"
+F 5 "https://www.digikey.de/product-detail/en/on-semiconductor/NTHD4102PT1G/NTHD4102PT1GOSCT-ND/2122000" H 7600 2600 50  0001 C CNN "Link"
+F 6 "NTHD4102PT1G" H 7600 2600 50  0001 C CNN "MPN"
+F 7 "ON Semiconductor" H 7600 2600 50  0001 C CNN "Manufacturer"
+F 8 "8-SMD, Flat Lead " H 7600 2600 50  0001 C CNN "Package"
+F 9 "NTHD4102PT1GOSCT-ND" H 7600 2600 50  0001 C CNN "SPN"
+	1    7600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Locator_Library:BQ25505 U1
+U 1 1 5F2A8AD0
+P 3600 2500
+F 0 "U1" H 4000 3550 50  0000 C CNN
+F 1 "BQ25505RGRR" H 4000 3450 50  0000 C CNN
+F 2 "Locator_Footprints:BQ25505" H 4300 3350 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/bq25505.pdf" H 4300 3250 50  0001 L CNN
+F 4 "Energy Harvesting PMIC 20-VQFN (3.5x3.5)" H 3600 2500 50  0001 C CNN "Description"
+F 5 "https://www.digikey.de/product-detail/en/texas-instruments/BQ25505RGRR/296-37078-1-ND/4493883" H 3600 2500 50  0001 C CNN "Link"
+F 6 "BQ25505RGRR" H 3600 2500 50  0001 C CNN "MPN"
+F 7 "Texas Instruments" H 3600 2500 50  0001 C CNN "Manufacturer"
+F 8 "20-VFQFN Exposed Pad " H 3600 2500 50  0001 C CNN "Package"
+F 9 "296-37078-1-ND" H 3600 2500 50  0001 C CNN "SPN"
+	1    3600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Locator_Library:arithmetics_logo_1100DPI L2
+U 1 1 5F2BA1A2
+P 1150 7350
+F 0 "L2" H 1263 7195 50  0000 L CNN
+F 1 "arithmetics_logo_1100DPI" H 1263 7104 50  0000 L CNN
+F 2 "arithmetics_logos:logo_1100_DPI" H 1150 7350 50  0001 C CNN
+F 3 "" H 1150 7350 50  0001 C CNN
+F 4 "DNP" H 1150 7350 50  0001 C CNN "Assembly"
+	1    1150 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 3850 8900 3850
+Wire Wire Line
+	8550 3950 8900 3950
+Wire Wire Line
+	7350 4250 6900 4250
+Wire Wire Line
+	7350 4050 6900 4050
+Wire Wire Line
+	7350 4350 6900 4350
+Wire Wire Line
+	7350 4150 6900 4150
+Wire Wire Line
+	7350 3950 6900 3950
+Wire Wire Line
+	7350 3850 6900 3850
+Wire Wire Line
+	7350 3750 6900 3750
+Wire Wire Line
+	7350 3650 6900 3650
+Wire Wire Line
+	8550 3750 8900 3750
+Text Label 8900 3850 2    50   ~ 0
+GND
+Text Label 6900 4250 0    50   ~ 0
+GND
+Wire Wire Line
+	10050 1400 10050 1700
+$Comp
+L Device:C_Small C7
+U 1 1 5F016E37
+P 10050 1300
+F 0 "C7" H 10142 1346 50  0000 L CNN
+F 1 "4.7uF" H 10142 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10050 1300 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf" H 10050 1300 50  0001 C CNN
+F 4 "4.7µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 10050 1300 50  0001 C CNN "Description"
+F 5 "https://www.digikey.de/product-detail/en/tdk-corporation/C1608X5R1C475K080AC/445-7478-1-ND/2733550" H 10050 1300 50  0001 C CNN "Link"
+F 6 "C1608X5R1C475K080AC" H 10050 1300 50  0001 C CNN "MPN"
+F 7 "TDK Corporation" H 10050 1300 50  0001 C CNN "Manufacturer"
+F 8 "C-0603 (1608 Metric) " H 10050 1300 50  0001 C CNN "Package"
+F 9 "445-7478-1-ND" H 10050 1300 50  0001 C CNN "SPN"
+	1    10050 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 4150 8900 4150
+Wire Wire Line
+	8550 4050 8900 4050
+Wire Wire Line
+	8550 4350 8900 4350
+Text Label 8900 4350 2    50   ~ 0
+GND
+Text Label 8900 4050 2    50   ~ 0
+PWR_OUT
+$Comp
+L power:VCC #PWR0105
+U 1 1 5F6C30C9
+P 3550 950
+F 0 "#PWR0105" H 3550 800 50  0001 C CNN
+F 1 "VCC" H 3565 1123 50  0000 C CNN
+F 2 "" H 3550 950 50  0001 C CNN
+F 3 "" H 3550 950 50  0001 C CNN
+	1    3550 950 
+	1    0    0    -1  
+$EndComp
+Connection ~ 3550 950 
+Text Notes 1900 4250 0    50   ~ 0
+Max. charge voltage: 4.067V\n(VBAT_OV)
+Text Notes 4150 4250 0    50   ~ 0
+Undervoltage protection: 2.51V (VBAT_OK)\nHysteresis voltage window: 2.715V (VBAT_OK_HYST)
+$Comp
+L power:+VDC #PWR010
+U 1 1 5EF53442
+P 8350 1100
+F 0 "#PWR010" H 8350 1000 50  0001 C CNN
+F 1 "+VDC" H 8350 1375 50  0000 C CNN
+F 2 "" H 8350 1100 50  0001 C CNN
+F 3 "" H 8350 1100 50  0001 C CNN
+	1    8350 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 2700 8300 2800
+Wire Wire Line
+	8300 2800 8500 2800
+Wire Wire Line
+	2500 950  2950 950 
+$Comp
+L Device:C_Small CBYP1
+U 1 1 5EEA809F
+P 2950 1150
+F 0 "CBYP1" H 3042 1196 50  0000 L CNN
+F 1 "0.1uF" H 3042 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2950 1150 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1090_X7R_ESD.pdf" H 2950 1150 50  0001 C CNN
+F 4 "0.1µF ±5% 16V Ceramic Capacitor X7R 0603 (1608 Metric)" H 2950 1150 50  0001 C CNN "Description"
+F 5 "https://www.digikey.com/product-detail/en/kemet/C0603X104J4RECAUTO/399-17843-6-ND/8640583" H 2950 1150 50  0001 C CNN "Link"
+F 6 "C0603X104J4RECAUTO" H 2950 1150 50  0001 C CNN "MPN"
+F 7 "KEMET" H 2950 1150 50  0001 C CNN "Manufacturer"
+F 8 "C-0603 (1608 Metric) " H 2950 1150 50  0001 C CNN "Package"
+F 9 "399-17843-6-ND" H 2950 1150 50  0001 C CNN "SPN"
+	1    2950 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1300 2950 1300
+Connection ~ 2950 950 
+Wire Wire Line
+	2950 950  3550 950 
+Wire Wire Line
+	2950 1250 2950 1300
+Wire Wire Line
+	2950 950  2950 1050
+Wire Wire Line
+	4450 1750 5800 1750
+$Comp
+L Device:C_Small CPRI1
+U 1 1 5F5AF6E7
+P 5800 2100
+F 0 "CPRI1" H 5892 2146 50  0000 L CNN
+F 1 "4.7uF" H 5892 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5800 2100 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf" H 5800 2100 50  0001 C CNN
+F 4 "4.7µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 5800 2100 50  0001 C CNN "Description"
+F 5 "https://www.digikey.de/product-detail/en/tdk-corporation/C1608X5R1C475K080AC/445-7478-1-ND/2733550" H 5800 2100 50  0001 C CNN "Link"
+F 6 "C1608X5R1C475K080AC" H 5800 2100 50  0001 C CNN "MPN"
+F 7 "TDK Corporation" H 5800 2100 50  0001 C CNN "Manufacturer"
+F 8 "C-0603 (1608 Metric) " H 5800 2100 50  0001 C CNN "Package"
+F 9 "445-7478-1-ND" H 5800 2100 50  0001 C CNN "SPN"
+	1    5800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5F5BCE61
+P 5800 2200
+F 0 "#PWR0106" H 5800 1950 50  0001 C CNN
+F 1 "GND" H 5805 2027 50  0000 C CNN
+F 2 "" H 5800 2200 50  0001 C CNN
+F 3 "" H 5800 2200 50  0001 C CNN
+	1    5800 2200
+	1    0    0    -1  
+$EndComp
+Text Label 6900 4050 0    50   ~ 0
+GND
+$Comp
+L Device:C_Small CSEC1
+U 1 1 5F5B9FC4
+P 5200 2100
+F 0 "CSEC1" H 5292 2146 50  0000 L CNN
+F 1 "4.7uF" H 5292 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5200 2100 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf" H 5200 2100 50  0001 C CNN
+F 4 "4.7µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)" H 5200 2100 50  0001 C CNN "Description"
+F 5 "https://www.digikey.de/product-detail/en/tdk-corporation/C1608X5R1C475K080AC/445-7478-1-ND/2733550" H 5200 2100 50  0001 C CNN "Link"
+F 6 "C1608X5R1C475K080AC" H 5200 2100 50  0001 C CNN "MPN"
+F 7 "TDK Corporation" H 5200 2100 50  0001 C CNN "Manufacturer"
+F 8 "C-0603 (1608 Metric) " H 5200 2100 50  0001 C CNN "Package"
+F 9 "445-7478-1-ND" H 5200 2100 50  0001 C CNN "SPN"
+	1    5200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5F5B9FCA
+P 5200 2200
+F 0 "#PWR0107" H 5200 1950 50  0001 C CNN
+F 1 "GND" H 5205 2027 50  0000 C CNN
+F 2 "" H 5200 2200 50  0001 C CNN
+F 3 "" H 5200 2200 50  0001 C CNN
+	1    5200 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2000 5200 2000
+Wire Wire Line
+	5800 1750 5800 2000
+Text Notes 4850 3050 0    50   ~ 0
+CPRI and CSEC are optional for now\n(e.g. for preventing VSTOR voltage \nfrom shortly dropping below \nVBAT_OK and the chip entering \ncold start condition on a large\nburst from VBAT_SEC)\n
+$Comp
+L power:+VDC #PWR0104
+U 1 1 5F6B3F91
+P 1250 5850
+F 0 "#PWR0104" H 1250 5750 50  0001 C CNN
+F 1 "+VDC" H 1250 6125 50  0000 C CNN
+F 2 "" H 1250 5850 50  0001 C CNN
+F 3 "" H 1250 5850 50  0001 C CNN
+	1    1250 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6300 2150 6450
+Wire Wire Line
+	2150 6000 2150 6100
+Wire Wire Line
+	1250 6300 1250 6450
+Connection ~ 1250 6000
+Wire Wire Line
+	1250 6000 1250 6100
+$Comp
+L Device:R_Small R1
+U 1 1 5EEEB2C9
+P 1250 6200
+F 0 "R1" H 1309 6246 50  0000 L CNN
+F 1 "10k" H 1309 6155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1250 6200 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf" H 1250 6200 50  0001 C CNN
+F 4 "10 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film" H 1250 6200 50  0001 C CNN "Description"
+F 5 "https://www.digikey.com/product-detail/en/yageo/AC0603JR-0710KL/311-10KLECT-ND/2828151" H 1250 6200 50  0001 C CNN "Link"
+F 6 "AC0603JR-0710KL" H 1250 6200 50  0001 C CNN "MPN"
+F 7 "Yageo" H 1250 6200 50  0001 C CNN "Manufacturer"
+F 8 "R-0603 (1608 Metric) " H 1250 6200 50  0001 C CNN "Package"
+F 9 "311-10KLECT-ND" H 1250 6200 50  0001 C CNN "SPN"
+	1    1250 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5EEE52A2
+P 2150 6200
+F 0 "R2" H 2209 6246 50  0000 L CNN
+F 1 "10k" H 2209 6155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2150 6200 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf" H 2150 6200 50  0001 C CNN
+F 4 "10 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film" H 2150 6200 50  0001 C CNN "Description"
+F 5 "https://www.digikey.com/product-detail/en/yageo/AC0603JR-0710KL/311-10KLECT-ND/2828151" H 2150 6200 50  0001 C CNN "Link"
+F 6 "AC0603JR-0710KL" H 2150 6200 50  0001 C CNN "MPN"
+F 7 "Yageo" H 2150 6200 50  0001 C CNN "Manufacturer"
+F 8 "R-0603 (1608 Metric) " H 2150 6200 50  0001 C CNN "Package"
+F 9 "311-10KLECT-ND" H 2150 6200 50  0001 C CNN "SPN"
+	1    2150 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6650 2150 6750
+Wire Wire Line
+	1250 6650 1250 6750
+Wire Wire Line
+	1250 6000 2150 6000
+Wire Wire Line
+	1250 5850 1250 6000
+$Comp
+L Device:LED_Small D2
+U 1 1 5EE96C38
+P 2150 6550
+F 0 "D2" V 2196 6480 50  0000 R CNN
+F 1 "LED_SEC" V 2105 6480 50  0000 R CNN
+F 2 "Locator_Footprints:LED_0603_1608Metric" V 2150 6550 50  0001 C CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493517/LS%20L29K.pdf" V 2150 6550 50  0001 C CNN
+F 4 "Red 630nm LED Indication - Discrete Vf=1.8V 0603 (1608 Metric)" H 2150 6550 50  0001 C CNN "Description"
+F 5 "https://www.digikey.com/product-detail/en/osram-opto-semiconductors-inc/LS-L29K-G1H2-1-Z/475-3124-1-ND/4899561" H 2150 6550 50  0001 C CNN "Link"
+F 6 "LS L29K-G1H2-1-Z" H 2150 6550 50  0001 C CNN "MPN"
+F 7 "OSRAM Opto Semiconductors Inc." H 2150 6550 50  0001 C CNN "Manufacturer"
+F 8 "LED-0603 (1608 Metric) " H 2150 6550 50  0001 C CNN "Package"
+F 9 "475-3124-1-ND" H 2150 6550 50  0001 C CNN "SPN"
+	1    2150 6550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D1
+U 1 1 5EE958F1
+P 1250 6550
+F 0 "D1" V 1296 6480 50  0000 R CNN
+F 1 "LED_PRI" V 1205 6480 50  0000 R CNN
+F 2 "Locator_Footprints:LED_0603_1608Metric" V 1250 6550 50  0001 C CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493517/LS%20L29K.pdf" V 1250 6550 50  0001 C CNN
+F 4 "Red 630nm LED Indication - Discrete Vf=1.8V 0603 (1608 Metric)" H 1250 6550 50  0001 C CNN "Description"
+F 5 "https://www.digikey.com/product-detail/en/osram-opto-semiconductors-inc/LS-L29K-G1H2-1-Z/475-3124-1-ND/4899561" H 1250 6550 50  0001 C CNN "Link"
+F 6 "LS L29K-G1H2-1-Z" H 1250 6550 50  0001 C CNN "MPN"
+F 7 "OSRAM Opto Semiconductors Inc." H 1250 6550 50  0001 C CNN "Manufacturer"
+F 8 "LED-0603 (1608 Metric) " H 1250 6550 50  0001 C CNN "Package"
+F 9 "475-3124-1-ND" H 1250 6550 50  0001 C CNN "SPN"
+	1    1250 6550
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	550  5350 550  6850
+Wire Notes Line
+	2700 5350 2700 6850
+Wire Notes Line
+	550  6850 2700 6850
+Text Notes 650  5500 0    50   ~ 0
+LEDs to signal wich battery is selected
+Wire Notes Line
+	550  5350 2700 5350
+Wire Wire Line
+	4450 2350 4900 2350
+Text Label 4900 2350 2    50   ~ 0
+VB_PRI_ON
+Wire Wire Line
+	4450 2450 4900 2450
+Text Label 4900 2450 2    50   ~ 0
+VB_SEC_ON
+Text Label 6600 1100 0    50   ~ 0
+VB_PRI_ON
+Wire Wire Line
+	6600 1100 7100 1100
+Wire Wire Line
+	6600 2400 7100 2400
+Text Label 6600 2400 0    50   ~ 0
+VB_SEC_ON
+Wire Wire Line
+	8550 3650 8900 3650
+Text Label 8900 3650 2    50   ~ 0
+~EN
+Text Label 8900 4150 2    50   ~ 0
+GND
+Wire Wire Line
+	8550 4250 8900 4250
+Text Label 8900 4250 2    50   ~ 0
+VBAT_OK
+Wire Wire Line
+	750  6750 1250 6750
+Text Label 750  6750 0    50   ~ 0
+VB_PRI_ON
+Wire Wire Line
+	1650 6750 2150 6750
+Text Label 1650 6750 0    50   ~ 0
+VB_SEC_ON
+Wire Wire Line
+	2750 2750 2600 2750
+Text Label 2600 2750 0    50   ~ 0
+~EN
+Text Label 2450 2900 0    50   ~ 0
+VBAT_OK
+Wire Wire Line
+	2450 2900 2750 2900
+$EndSCHEMATC

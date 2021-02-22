@@ -1,0 +1,32 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Energy_Harvesting_Module_Footprint-Locator_Library
+#
+DEF Energy_Harvesting_Module_Footprint-Locator_Library J 0 40 Y Y 1 F N
+F0 "J" 0 600 50 H V C CNN
+F1 "Energy_Harvesting_Module_Footprint-Locator_Library" 100 500 50 H V C CNN
+F2 "Locator_Footprints:Energy_Harvesting_Module_Footprint" 0 600 50 H I C CNN
+F3 "" 0 600 50 H I C CNN
+DRAW
+S -500 400 500 -400 0 1 0 f
+X SOLAR_IN 1 -600 350 100 R 50 50 1 1 I
+X V_BAT_OK 10 600 -250 100 L 50 50 1 1 I
+X NC 11 600 -150 100 L 50 50 1 1 I
+X NC 12 600 -50 100 L 50 50 1 1 I
+X GND 13 600 50 100 L 50 50 1 1 I
+X PWR_OUT 14 600 150 100 L 50 50 1 1 I
+X GND 15 600 250 100 L 50 50 1 1 I
+X NC 16 600 350 100 L 50 50 1 1 I
+X GND 2 -600 250 100 R 50 50 1 1 I
+X VBAT_PRI 3 -600 150 100 R 50 50 1 1 I
+X GND 4 -600 50 100 R 50 50 1 1 I
+X VBAT_SEC 5 -600 -50 100 R 50 50 1 1 I
+X GND 6 -600 -150 100 R 50 50 1 1 I
+X GND 7 -600 -250 100 R 50 50 1 1 I
+X GND 8 -600 -350 100 R 50 50 1 1 I
+X EN 9 600 -350 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
